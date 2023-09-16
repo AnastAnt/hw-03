@@ -9,8 +9,8 @@ a {
 ul {
   list-style-type: none;
 }
-li:not(:last-child) {
-  margin-right: 40px;
+li:last-child {
+  margin-right: 0;
 }
 button {
   font-family: inherit;
@@ -97,7 +97,7 @@ img {
 }
 .section {
   background-color: F4F4FD;
-  padding: 120px 0;
+  padding: 120px 0 120px 0;
 }
 .section-big-title {
   font-size: 56px;
@@ -146,6 +146,7 @@ img {
 .how-list {
   display: flex;
   gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
 .section-title {
   font-weight: 500;
@@ -165,10 +166,20 @@ img {
 }
 .sectiol-list {
   background-color: #ffffff;
-  flex-basis: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.sectiol-list-last {
+  width: calc((100% - 48px) / 3);
+
 }
 .cont {
   padding: 32px 0;
+}
+.cont-last {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+
 }
 .team-list {
   display: flex;
