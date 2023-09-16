@@ -36,7 +36,6 @@ img {
   color: #4d5ae5;
 
   margin-right: 76px;
-
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -89,10 +88,11 @@ img {
 }
 .section-one {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .section {
   background-color: F4F4FD;
-  padding: 188px;
+  padding: 188px 0;
 }
 .section-big-title {
   font-size: 56px;
@@ -167,7 +167,7 @@ img {
 }
 .sectiol-list {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4)
   border-radius: 0px 0px 4px 4px;
 }
 .cont {
@@ -176,6 +176,8 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 48px; 
 }
 
 .footer {
@@ -198,4 +200,12 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   width: 1158px;
+} 
+.container-portfolio {
+  display: flex;
+  max-width: 1158px;
+  margin: 0 auto;
+  width: 1158px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
