@@ -21,10 +21,10 @@ img {
 .header {
   flex-shrink: 0;
   border-bottom: 1px solid #e7e9fc;
+  margin: 0 auto;
 }
 .header-container {
   width: 1158px;
-  margin: 0 auto;
   padding: 0 15px;
   display: flex;
 }
@@ -157,7 +157,6 @@ img {
 .how-list {
   display: flex;
   gap: 24px;
-  width: calc((100% - 72px) / 4);
 }
 .section-title {
   font-weight: 500;
@@ -179,6 +178,7 @@ img {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  gap: 24px;
 }
 .sectiol-list-last {
 
