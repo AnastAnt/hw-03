@@ -139,17 +139,10 @@ img {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-.title-hide {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
+#how-work {
+  display: none;
 }
-.title-hide .hidden {
-  visually: hidden;
-}
+
 .how-list {
   display: flex;
   gap: 24px;
