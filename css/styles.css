@@ -9,11 +9,22 @@ a {
 ul {
   list-style-type: none;
 }
+li:not(:last-child) {
+  margin-right: 40px;
+}
 button {
   font-family: inherit;
 }
+img {
+  display: block;
+}
 .header {
   flex-shrink: 0;
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -23,15 +34,26 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+
+  margin-right: 76px;
+
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo2 {
   color: #2e2f42;
+}
+.menu {
+  display: flex;
+  gap: 40px;
 }
 .nav-link {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+
+  padding: 24px 0;
 }
 .nav-link:hover {
   color: #404bbf;
@@ -42,6 +64,10 @@ button {
 
 .header-contact {
   font-style: normal;
+}
+.contact-lict {
+  display: flex;
+  gap: 40px;
 }
 .header-contact-link {
   font-size: 16px;
@@ -55,15 +81,23 @@ button {
 .header-contact-link:focus {
   color: #404bbf;
 }
-.section-one {
-  background-color: #2e2f42;
+.container-nav {
+  display: flex;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-.section-one-title {
+.section {
+  background-color: F4F4FD;
+  padding: 188px;
+}
+.section-big-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
 }
 .section-one-button {
   background-color: #4d5ae5;
@@ -74,6 +108,12 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .section-one-button:hover {
   background-color: #404bbf;
@@ -82,7 +122,16 @@ button {
 .section-one-button:focus {
   background-color: #404bbf;
 }
-.section-two-title-title {
+.title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.title-hide {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -90,45 +139,59 @@ button {
   text-transform: capitalize;
   color: #2e2f42;
 }
-.section-two-title {
+.title-hide .hidden {
+  visually: hidden;
+}
+.why-list {
+  display: flex;
+  gap: 24px;
+}
+.section-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
 }
-.section-two-text {
+.section-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
 }
 .sectiol-list {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
-.section-three {
-  background-color: #f4f4fd;
+.cont {
+  padding: 32px 0;
 }
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 .footer-p {
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 .footer-span {
   color: #f4f4fd;
 }
-.header-navigation {
-display: flex;
-}
-.header .container {
+
+.container {
   display: flex;
-  flex-direction: 
-  width: 1440px;
-  height: 72px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
