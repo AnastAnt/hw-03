@@ -22,6 +22,11 @@ img {
   flex-shrink: 0;
   border-bottom: 1px solid #e7e9fc;
 }
+.header-container{
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .header-navigation {
   display: flex;
   align-items: center;
@@ -92,7 +97,7 @@ img {
 }
 .section {
   background-color: F4F4FD;
-  padding: 188px 0;
+  padding: 120px 0;
 }
 .section-big-title {
   font-size: 56px;
@@ -145,9 +150,10 @@ img {
 .title-hide .hidden {
   visually: hidden;
 }
-.why-list {
+.how-list {
   display: flex;
   gap: 24px;
+  
 }
 .section-title {
   font-weight: 500;
